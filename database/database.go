@@ -35,7 +35,6 @@ func Connect() {
 		log.Fatal("Veritabanına bağlanılamadı:", err)
 	}
 
-	// Connection pool ayarları
 	sqlDB, err := DB.DB()
 	if err != nil {
 		log.Fatal("SQL DB alınamadı:", err)

@@ -4,7 +4,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// APIResponse - Standart API response yapısı
 type APIResponse struct {
 	Success bool        `json:"success"`
 	Message string      `json:"message,omitempty"`
@@ -12,14 +11,12 @@ type APIResponse struct {
 	Error   *APIError   `json:"error,omitempty"`
 }
 
-// APIError - Hata detayları
 type APIError struct {
 	Code    string                 `json:"code"`
 	Message string                 `json:"message"`
 	Details map[string]interface{} `json:"details,omitempty"`
 }
 
-// PaginatedResponse - Sayfalı response
 type PaginatedResponse struct {
 	Success    bool        `json:"success"`
 	Data       interface{} `json:"data"`
@@ -33,7 +30,6 @@ type Pagination struct {
 	TotalPages int64 `json:"total_pages"`
 }
 
-// SuccessResponse - Başarılı response
 func SuccessResponse(c *gin.Context, statusCode int, data interface{}) {
 	c.JSON(statusCode, APIResponse{
 		Success: true,
@@ -41,7 +37,6 @@ func SuccessResponse(c *gin.Context, statusCode int, data interface{}) {
 	})
 }
 
-// SuccessWithMessage - Mesaj ile başarılı response
 func SuccessWithMessage(c *gin.Context, statusCode int, message string, data interface{}) {
 	c.JSON(statusCode, APIResponse{
 		Success: true,
@@ -50,7 +45,6 @@ func SuccessWithMessage(c *gin.Context, statusCode int, message string, data int
 	})
 }
 
-// ErrorResponse - Hata response
 func ErrorResponse(c *gin.Context, statusCode int, code, message string) {
 	c.JSON(statusCode, APIResponse{
 		Success: false,
@@ -61,7 +55,6 @@ func ErrorResponse(c *gin.Context, statusCode int, code, message string) {
 	})
 }
 
-// ErrorResponseWithDetails - Detaylı hata response
 func ErrorResponseWithDetails(c *gin.Context, statusCode int, code, message string, details map[string]interface{}) {
 	c.JSON(statusCode, APIResponse{
 		Success: false,
@@ -73,7 +66,6 @@ func ErrorResponseWithDetails(c *gin.Context, statusCode int, code, message stri
 	})
 }
 
-// PaginatedSuccessResponse - Sayfalı başarılı response
 func PaginatedSuccessResponse(c *gin.Context, data interface{}, page, pageSize int, total int64) {
 	totalPages := (total + int64(pageSize) - 1) / int64(pageSize)
 

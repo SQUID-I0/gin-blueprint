@@ -8,16 +8,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// ErrorHandler - Global error handling middleware
 func ErrorHandler() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		c.Next()
 
-		// Handler'dan dönen hataları kontrol et
 		if len(c.Errors) > 0 {
 			err := c.Errors.Last()
 
-			// AppError ise
 			if appErr, ok := err.Err.(*utils.AppError); ok {
 				if appErr.Details != nil {
 					utils.ErrorResponseWithDetails(
@@ -38,7 +35,6 @@ func ErrorHandler() gin.HandlerFunc {
 				return
 			}
 
-			// Genel hata
 			log.Printf("Unhandled error: %v", err.Err)
 			utils.ErrorResponse(
 				c,

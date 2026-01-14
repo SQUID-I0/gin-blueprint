@@ -5,7 +5,6 @@ import (
 	"net/http"
 )
 
-// Custom error types
 var (
 	ErrNotFound          = errors.New("resource not found")
 	ErrUnauthorized      = errors.New("unauthorized")
@@ -17,7 +16,6 @@ var (
 	ErrDatabaseOperation = errors.New("database operation failed")
 )
 
-// AppError - Uygulama hatası
 type AppError struct {
 	Err        error
 	Message    string
@@ -33,7 +31,6 @@ func (e *AppError) Error() string {
 	return e.Err.Error()
 }
 
-// NewAppError - Yeni app error oluştur
 func NewAppError(err error, message, code string, statusCode int) *AppError {
 	return &AppError{
 		Err:        err,
@@ -43,7 +40,6 @@ func NewAppError(err error, message, code string, statusCode int) *AppError {
 	}
 }
 
-// Common error constructors
 func NewNotFoundError(message string) *AppError {
 	return &AppError{
 		Err:        ErrNotFound,
